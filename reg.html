@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>京东登录</title>
+    <link rel="stylesheet" href="css/reg.css" type="text/css">
+</head>
+<body>
+    <!--禁止chrome自动填充-->
+    <input type="text" name="username" style="display:none;">
+    <input type="password" name="password" style="display:none;">
+    <!-- header -->
+    <header id="header">
+        <span class="icon icon-back"></span>
+        <span class="txt_header">京东注册</span>
+    </header>
+    <!-- section -->
+    <section class="page">
+        <div class="wrap regPage">
+            <div class="input-container">
+                <label class="area-box">
+                    <span class="area_code">+86</span>
+                    <i class="area_icon"></i>
+                </label>
+                <input type="tel" id="telphone" class="telphone acc-input txt-input J_ping" value="" placeholder="请输入手机号" >
+                <i class="icon icon-clear"></i>
+            </div>
+            <a href="regtwo.html" class="next-step btn">下一步</a>
+            <div class="input-container J_ping captcha" report-eventid="MLoginRegister_FirstVerification">
+                <div id="captcha_verify" class="verify" style="height:45px;border-radius:undefinedpx;">
+                     <img id="captcha_logo" src="img/init.gif" class="" style="margin-top:10.5px;"> 
+                     <span id="captcha_txt" class="txt" style="line-height:45px;">
+                        点击完成验证
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="toast-ui">
+        <span class="toast">手机号格式错误</span>
+    </div>
+</body>
+</html>
+<script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+<script type="text/javascript" src="js/reg.js"></script>

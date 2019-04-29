@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>京东登录</title>
+    <link rel="stylesheet" href="css/login.css" type="text/css">
+</head>
+<body>
+    <!--禁止chrome自动填充-->
+    <input type="text" name="username" style="display:none;">
+    <input type="password" name="password" style="display:none;">
+    <!-- header -->
+    <header id="header">
+        <span class="icon icon-back"></span>
+        <span class="txt_header">京东登录</span>
+    </header>
+    <!-- section -->
+    <section class="page">
+        <div class="logo">
+            <img src="img/jd_dog.png" alt="">
+        </div>
+        <div class="wrap lofinPage">
+            <div class="login-wrap login-wrap-active">
+                <div class="input-container">
+                    <input type="text" id="username" class="username acc-input" placeholder="用户名/邮箱/已验证手机">
+                    <i class="icon icon-clear"></i>
+                </div>
+                <div class="input-container">
+                    <input type="passwoord" id="password" class="password acc-input" placeholder="请输入密码"/>
+                    <i class="icon icon-clear"></i>
+                    <label class="label-checkbox">
+                        <input type="checkbox">
+                        <div class="checkbtn"></div>
+                    </label>
+                    <button class="findpwd">忘记密码</button>
+                </div>
+            </div>
+             <div class="login-wrap login-wrap-active" style="position: relative">
+                 <div class="input-container">
+                     <label class="area-box">
+                         <span>+86</span>
+                         <i class="area_icon"></i>
+                     </label>
+                     <input type="tel" class="acc-input telphone" placeholder="请输入手机号">
+                     <i class="icon icon-clear"></i>
+                 </div>
+                 <button class="mesg-code mesg-disable J_ping">获取验证码</button>
+                <div class="input-container">
+                    <input type="tel" id="username" class="username acc-input" placeholder="请输入收到的验证码">
+                    <i class="icon icon-clear"></i>
+                </div>
+            </div>
+            <div class="notice">&nbsp;</div>
+            <a href="javascript:;" class="btn" id="loginBtn">登录</a>
+            <a href="javascript:;" class="btn btn-onestep" id="loginBtn">一键登录</a>
+            <div class="quick-nav">
+                <a href="javascript:;">短信验证码登录</a>
+                <a href="javascript:;">手机快速注册</a>
+            </div>
+            <div class="login-type">
+                <div class="quick-login">
+                    <h4>其他登录方式</h4>
+                    <a href="javascript:;">
+                        <i class="icon icon-mlogin icon-qq"></i>
+                        <br/>
+                        <span>QQ</span>
+                    </a>
+                    <a href="javascript:;">
+                        <i class="icon icon-mlogin icon-wx"></i>
+                        <br/>
+                        <span>微信</span>
+                    </a>
+                    <a href="javascript:;">
+                        <i class="icon icon-mlogin icon-qb"></i>
+                        <br/>
+                        <span>京东钱包</span>
+                    </a>
+                </div>
+                <div class="agreement-tips">
+                    <p>
+                        登录即代表您已同意
+                        <a href="javascript:;">京东隐私政策</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
+<script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+<script type="text/javascript" src="js/login.js"></script>
